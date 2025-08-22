@@ -23,7 +23,7 @@ Fitur utama:
 
 1. **Clone repository**
    ```bash
-   git clone https://github.com/username/repo-name.git
+   git clone https://github.com/matiusnugroho/gudang-ci4.git
    cd repo-name
    ```
 
