@@ -24,17 +24,16 @@
           <li class="nav-item"><a class="nav-link" href="<?= site_url('purchases') ?>">Pembelian</a></li>
           <li class="nav-item"><a class="nav-link" href="<?= site_url('incoming') ?>">Barang Masuk</a></li>
           <li class="nav-item"><a class="nav-link" href="<?= site_url('outgoing') ?>">Barang Keluar</a></li>
-          <li class="nav-item"><a class="nav-link" href="<?= site_url('users') ?>">Users</a></li>
           <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="reportsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Reports
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="reportsDropdown">
-                    <li><a class="dropdown-item" href="<?= site_url('reports/incoming') ?>">Barang Masuk</a></li>
-                    <li><a class="dropdown-item" href="<?= site_url('reports/outgoing') ?>">Barang Keluar</a></li>
-                    <li><a class="dropdown-item" href="<?= site_url('reports/stock') ?>">Stok Barang</a></li>
-                </ul>
-            </li>
+              <a class="nav-link dropdown-toggle" href="#" id="reportsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Reports
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="reportsDropdown">
+                  <li><a class="dropdown-item" href="<?= site_url('reports/incoming') ?>">Barang Masuk</a></li>
+                  <li><a class="dropdown-item" href="<?= site_url('reports/outgoing') ?>">Barang Keluar</a></li>
+                  <li><a class="dropdown-item" href="<?= site_url('reports/stock') ?>">Stok Barang</a></li>
+              </ul>
+          </li>
         </ul>
         <span class="navbar-text me-3">
           Halo, <strong><?= session('username') ?></strong> (<?= session('role') ?>)

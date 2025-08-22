@@ -6,8 +6,8 @@ use CodeIgniter\Model;
 
 class CategoryModel extends Model
 {
-    protected $table         = 'categories';
-    protected $primaryKey    = 'id';
-    protected $allowedFields = ['name'];
-    protected $useTimestamps = true;
+    protected $table            = 'categories';
+    protected $primaryKey       = 'id';
+    protected $allowedFields    = ['name', 'created_at', 'updated_at'];
+    protected $useTimestamps    = true;
 }
