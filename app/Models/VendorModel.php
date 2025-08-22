@@ -6,8 +6,12 @@ use CodeIgniter\Model;
 
 class VendorModel extends Model
 {
-    protected $table         = 'vendors';
-    protected $primaryKey    = 'id';
-    protected $allowedFields = ['name','address','phone'];
-    protected $useTimestamps = true;
+    protected $table            = 'vendors';
+    protected $primaryKey       = 'id';
+    protected $useAutoIncrement = true;
+    protected $returnType       = 'array';
+    protected $useSoftDeletes   = false;
+
+    protected $allowedFields    = ['name', 'address', 'phone'];
+    protected $useTimestamps    = true;
 }

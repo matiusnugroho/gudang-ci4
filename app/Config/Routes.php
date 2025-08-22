@@ -23,6 +23,7 @@ $routes->group('reports', [
     $routes->get('stock', 'Reports::stock');
 });
 $routes->resource('categories', ['filter' => 'auth']);
+$routes->resource('vendors', ['filter' => 'auth']);
 
 $routes->get('api/purchase-items/(:num)', 'Api::purchaseItems/$1');
 
